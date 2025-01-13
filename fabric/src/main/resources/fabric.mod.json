@@ -1,37 +1,34 @@
 {
-  "schemaVersion": 1,
-  "id": "takeitslow",
-  "version": "${version}",
-  "name": "Take it Slow",
-  "description": "Who needs sprinting anyways?",
-  "authors": [
-    "iGalaxy"
-  ],
-  "contact": {
-    "homepage": "https://github.com/iGalaxyYT/take-it-slow",
-    "sources": "https://github.com/iGalaxyYT/take-it-slow"
-  },
-  "license": "MIT",
-  "icon": "assets/takeitslow/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "dev.igalaxy.takeitslow.fabric.FabricEntrypoint"
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
     ],
-    "modmenu": [
-      "dev.igalaxy.takeitslow.fabric.ModMenuIntegration"
-    ]
-  },
-  "mixins": [
-    "takeitslow.mixins.json",
-    "takeitslow-common.mixins.json"
-  ],
-  "depends": {
-    "minecraft": ">=1.19",
-    "java": ">=17",
-    "cloth-config2": ">=8.0.0"
-  },
-  "suggests": {
-    "modmenu": ">=4.0.0"
-  }
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "${license}",
+    "icon": "${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "mom.wii.takeitslow.TakeItSlowFabric"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=${java_version}",
+        "yet_another_config_lib_v3": ">=3.6.2"
+    }
 }
+  
