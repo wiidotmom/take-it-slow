@@ -8,8 +8,9 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://modrinth.com/mod/take-it-slow/",
+        "sources": "https://github.com/wiidotmom/take-it-slow",
+        "issues": "https://github.com/wiidotmom/take-it-slow/issues"
     },
     "license": "${license}",
     "icon": "${mod_id}.png",
@@ -17,6 +18,9 @@
     "entrypoints": {
         "main": [
             "mom.wii.takeitslow.TakeItSlowFabric"
+        ],
+        "modmenu": [
+            "mom.wii.takeitslow.compat.ModMenuIntegration"
         ]
     },
     "mixins": [

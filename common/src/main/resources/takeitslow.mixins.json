@@ -6,6 +6,10 @@
   "compatibilityLevel": "JAVA_18",
   "mixins": [],
   "client": [
+    "LivingEntityMixin",
+    "LocalPlayerAccessor",
+    "LocalPlayerMixin",
+    "MultiPlayerGameModeAccessor"
   ],
   "server": [],
   "injectors": {

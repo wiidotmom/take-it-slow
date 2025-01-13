@@ -1,6 +1,6 @@
 # 🐢 Take it Slow
 
-A Fabric/Quilt/NeoForge mod that disables sprinting and, optionally, swimming
+Minecraft mod that disables sprinting and, optionally, swimming
 
 Who needed sprinting anyways?
 

@@ -1,11 +1,15 @@
 package mom.wii.takeitslow.platform.services;
 
 public interface IConfig {
-    boolean allowSwimming = true;
+    boolean getAllowSwimming();
+    void setAllowSwimming(boolean value);
 
-    float swimSpeedScale = 1.0f;
+    double getSwimSpeedScale();
+    void setSwimSpeedScale(double value);
 
-    boolean allowCreative = true;
+    boolean getAllowCreative();
+    void setAllowCreative(boolean value);
 
-    boolean allowFlying = true;
+    boolean getAllowFlying();
+    void setAllowFlying(boolean value);
 }
