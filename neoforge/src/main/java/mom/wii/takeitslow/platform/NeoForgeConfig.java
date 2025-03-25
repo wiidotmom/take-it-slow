@@ -62,54 +62,54 @@ public class NeoForgeConfig implements IConfig {
 
 
     @SerialEntry
-    public boolean allowSwimming = true;
+    public static boolean allowSwimming = true;
 
     @SerialEntry
-    public double swimSpeedScale = 1.0;
+    public static double swimSpeedScale = 1.0;
 
     @SerialEntry
-    public boolean allowCreative = true;
+    public static boolean allowCreative = true;
 
     @SerialEntry
-    public boolean allowFlying = true;
+    public static boolean allowFlying = true;
 
     @Override
     public boolean getAllowSwimming() {
-        return this.allowSwimming;
+        return allowSwimming;
     }
 
     @Override
     public void setAllowSwimming(boolean value) {
-        this.allowSwimming = value;
+        allowSwimming = value;
     }
 
     @Override
     public double getSwimSpeedScale() {
-        return this.swimSpeedScale;
+        return swimSpeedScale;
     }
 
     @Override
     public void setSwimSpeedScale(double value) {
-        this.swimSpeedScale = value;
+        swimSpeedScale = value;
     }
 
     @Override
     public boolean getAllowCreative() {
-        return this.allowCreative;
+        return allowCreative;
     }
 
     @Override
     public void setAllowCreative(boolean value) {
-        this.allowCreative = value;
+        allowCreative = value;
     }
 
     @Override
     public boolean getAllowFlying() {
-        return this.allowFlying;
+        return allowFlying;
     }
 
     @Override
     public void setAllowFlying(boolean value) {
-        this.allowFlying = value;
+        allowFlying = value;
     }
 }

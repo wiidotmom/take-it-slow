@@ -37,7 +37,7 @@ neoForge {
 }
 
 dependencies {
-    implementation "dev.isxander:yet-another-config-lib:3.6.2+1.21.4-neoforge"
+    implementation "dev.isxander:yet-another-config-lib:3.6.6+1.21.4-neoforge"
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
