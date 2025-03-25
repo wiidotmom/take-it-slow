@@ -5,8 +5,6 @@ import dev.isxander.yacl3.api.ConfigCategory;
 import dev.isxander.yacl3.api.Option;
 import dev.isxander.yacl3.api.YetAnotherConfigLib;
 import dev.isxander.yacl3.api.controller.DoubleSliderControllerBuilder;
-import dev.isxander.yacl3.api.controller.FloatFieldControllerBuilder;
-import dev.isxander.yacl3.api.controller.FloatSliderControllerBuilder;
 import dev.isxander.yacl3.api.controller.TickBoxControllerBuilder;
 import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
 import dev.isxander.yacl3.config.v2.api.SerialEntry;
@@ -32,7 +30,7 @@ public class FabricConfig implements IConfig {
         return YetAnotherConfigLib.createBuilder()
                 .title(Component.translatable("config.takeitslow.title"))
                 .category(ConfigCategory.createBuilder()
-                        .name(Component.translatable("config.takeitslow.category.movement"))
+                        .name(Component.translatable("config.takeitslow.title"))
                         .option(Option.<Boolean>createBuilder()
                                 .name(Component.translatable("config.takeitslow.option.allowSwimming"))
                                 .binding(true, Services.CONFIG::getAllowSwimming, Services.CONFIG::setAllowSwimming)

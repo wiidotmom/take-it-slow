@@ -1,0 +1,7 @@
+{
+  "config.takeitslow.title": "Take it Slow",
+  "config.takeitslow.option.allowSwimming": "Allow Swimming",
+  "config.takeitslow.option.swimSpeedScale": "Swim Speed Scale",
+  "config.takeitslow.option.allowCreative": "Allow Sprinting in Creative/Spectator Mode",
+  "config.takeitslow.option.allowFlying": "Allow Sprinting in Flight"
+}
