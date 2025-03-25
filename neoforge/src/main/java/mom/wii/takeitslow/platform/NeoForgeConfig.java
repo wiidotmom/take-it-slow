@@ -28,7 +28,7 @@ public class NeoForgeConfig implements IConfig {
         return YetAnotherConfigLib.createBuilder()
                 .title(Component.translatable("config.takeitslow.title"))
                 .category(ConfigCategory.createBuilder()
-                        .name(Component.translatable("config.takeitslow.category.movement"))
+                        .name(Component.translatable("config.takeitslow.title"))
                         .option(Option.<Boolean>createBuilder()
                                 .name(Component.translatable("config.takeitslow.option.allowSwimming"))
                                 .binding(true, Services.CONFIG::getAllowSwimming, Services.CONFIG::setAllowSwimming)

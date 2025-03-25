@@ -5,12 +5,17 @@
     "name": "${mod_name}",
     "description": "${description}",
     "authors": [
-        "${mod_author}"
+        {
+            "name": "${mod_author}",
+            "contact": {
+                "homepage": "https://wii.mom"
+            }
+        }
     ],
     "contact": {
         "homepage": "https://modrinth.com/mod/take-it-slow/",
-        "sources": "https://github.com/wiidotmom/take-it-slow",
-        "issues": "https://github.com/wiidotmom/take-it-slow/issues"
+        "sources": "https://codeberg.org/igalaxy/take-it-slow",
+        "issues": "https://codeberg.org/igalaxy/take-it-slow/issues"
     },
     "license": "${license}",
     "icon": "${mod_id}.png",
@@ -32,7 +37,14 @@
         "fabric-api": "*",
         "minecraft": "${minecraft_version}",
         "java": ">=${java_version}",
-        "yet_another_config_lib_v3": ">=3.6.2"
+        "yet_another_config_lib_v3": ">=3.6.6"
+    },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.discord": "https://discord.gg/9taRw3PyKn"
+            }
+        }
     }
 }
   
