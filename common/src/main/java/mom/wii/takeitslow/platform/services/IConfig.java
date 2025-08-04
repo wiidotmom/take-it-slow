@@ -15,4 +15,7 @@ public interface IConfig {
 
     boolean getAllowFlying();
     void setAllowFlying(boolean value);
+
+    boolean getAllowMounted();
+    void setAllowMounted(boolean value);
 }

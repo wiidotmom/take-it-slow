@@ -19,15 +19,16 @@ public class LivingEntityMixin {
 
             boolean allowSwimming = Services.CONFIG.getAllowSwimming();
             boolean allowCreative = Services.CONFIG.getAllowCreative();
-            boolean allowFlying = Services.CONFIG.getAllowFlying();;
+            boolean allowFlying = Services.CONFIG.getAllowFlying();
+            boolean allowMountedSprinting = Services.CONFIG.getAllowMounted();
 
             boolean isUnderwater = player.isUnderWater();
             boolean isCreative = localPlayerMode == GameType.CREATIVE;
             boolean isSpectator = localPlayerMode == GameType.SPECTATOR;
             boolean isFlying = player.getAbilities().flying;
+            boolean isMounted = player.isPassenger();
 
-
-            return (isUnderwater && bl && allowSwimming) || (isCreative && bl && allowCreative) || (isSpectator && bl && allowCreative) || (isFlying && bl && allowFlying);
+            return (isUnderwater && bl && allowSwimming) || (isCreative && bl && allowCreative) || (isSpectator && bl && allowCreative) || (isFlying && bl && allowFlying) || (isMounted && bl && allowMountedSprinting);
         }
         return bl;
     }

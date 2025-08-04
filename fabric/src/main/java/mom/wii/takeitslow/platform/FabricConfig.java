@@ -61,6 +61,12 @@ public class FabricConfig implements IConfig {
                                 .controller(TickBoxControllerBuilder::create)
                                 .build()
                         )
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable("config.takeitslow.option.allowMounted"))
+                                .binding(true, Services.CONFIG::getAllowMounted, Services.CONFIG::setAllowMounted)
+                                .controller(TickBoxControllerBuilder::create)
+                                .build()
+                        )
                         .build()
                 )
                 .save(HANDLER::save)
@@ -83,6 +89,9 @@ public class FabricConfig implements IConfig {
 
     @SerialEntry
     public static boolean allowFlying = true;
+
+    @SerialEntry
+    public static boolean allowMounted = true;
 
     @Override
     public boolean getEnabled() {
@@ -131,5 +140,15 @@ public class FabricConfig implements IConfig {
     @Override
     public void setAllowFlying(boolean value) {
         allowFlying = value;
+    }
+
+    @Override
+    public boolean getAllowMounted() {
+        return allowMounted;
+    }
+
+    @Override
+    public void setAllowMounted(boolean value) {
+        allowMounted = value;
     }
 }
