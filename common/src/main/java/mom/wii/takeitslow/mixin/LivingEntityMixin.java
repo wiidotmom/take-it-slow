@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public class LivingEntityMixin {
     @ModifyVariable(method = "setSprinting(Z)V", at = @At("HEAD"))
     private boolean takeitslow$setSprinting(boolean bl) {
-        if (((Object) this) instanceof LocalPlayer) {
+        if (((Object) this) instanceof LocalPlayer && Services.CONFIG.getEnabled()) {
             LocalPlayer player = (LocalPlayer) (Object) this;
 
             GameType localPlayerMode = ((LocalPlayerAccessor)player).getMinecraft().gameMode.getPlayerMode();

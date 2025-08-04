@@ -1,5 +1,6 @@
 package mom.wii.takeitslow.mixin;
 
+import mom.wii.takeitslow.platform.Services;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,6 +19,7 @@ public abstract class LocalPlayerMixin {
 
     @Inject(method = "updateIsUnderwater", at = @At("TAIL"))
     private void takeitslow$updateIsUnderwater(CallbackInfoReturnable<Boolean> cir) {
+        if (!Services.CONFIG.getEnabled()) return;
         GameType localPlayerMode = ((MultiPlayerGameModeAccessor)this.minecraft.gameMode).getLocalPlayerMode();
 
         boolean isUnderwater = this.isUnderWater();

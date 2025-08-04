@@ -32,6 +32,12 @@ public class FabricConfig implements IConfig {
                 .category(ConfigCategory.createBuilder()
                         .name(Component.translatable("config.takeitslow.title"))
                         .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable("config.takeitslow.option.enabled"))
+                                .binding(true, Services.CONFIG::getEnabled, Services.CONFIG::setEnabled)
+                                .controller(TickBoxControllerBuilder::create)
+                                .build()
+                        )
+                        .option(Option.<Boolean>createBuilder()
                                 .name(Component.translatable("config.takeitslow.option.allowSwimming"))
                                 .binding(true, Services.CONFIG::getAllowSwimming, Services.CONFIG::setAllowSwimming)
                                 .controller(TickBoxControllerBuilder::create)
@@ -64,6 +70,9 @@ public class FabricConfig implements IConfig {
 
 
     @SerialEntry
+    public static boolean enabled = true;
+
+    @SerialEntry
     public static boolean allowSwimming = true;
 
     @SerialEntry
@@ -74,6 +83,15 @@ public class FabricConfig implements IConfig {
 
     @SerialEntry
     public static boolean allowFlying = true;
+
+    @Override
+    public boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean value) {
+        enabled = value;
+    }
 
     @Override
     public boolean getAllowSwimming() {

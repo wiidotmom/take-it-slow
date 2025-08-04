@@ -1,5 +1,6 @@
 {
   "config.takeitslow.title": "Take it Slow",
+  "config.takeitslow.option.enabled": "Enable Take it Slow",
   "config.takeitslow.option.allowSwimming": "Allow Swimming",
   "config.takeitslow.option.swimSpeedScale": "Swim Speed Scale",
   "config.takeitslow.option.allowCreative": "Allow Sprinting/Swimming in Creative/Spectator Mode",

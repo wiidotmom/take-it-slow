@@ -1,6 +1,9 @@
 package mom.wii.takeitslow.platform.services;
 
 public interface IConfig {
+    boolean getEnabled();
+    void setEnabled(boolean enabled);
+
     boolean getAllowSwimming();
     void setAllowSwimming(boolean value);
 
