@@ -10,8 +10,8 @@ dependencies {
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
-    modImplementation "dev.isxander:yet-another-config-lib:3.7.1+1.21.4-fabric"
-    modImplementation "com.terraformersmc:modmenu:13.0.0"
+    modImplementation "dev.isxander:yet-another-config-lib:3.8.0+1.21.9-fabric"
+    modImplementation "com.terraformersmc:modmenu:16.0.0-rc.1"
 }
 
 loom {

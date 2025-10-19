@@ -5,5 +5,8 @@
   "config.takeitslow.option.swimSpeedScale": "Swim Speed Scale",
   "config.takeitslow.option.allowCreative": "Allow Sprinting/Swimming in Creative/Spectator Mode",
   "config.takeitslow.option.allowFlying": "Allow Sprinting in Flight",
-  "config.takeitslow.option.allowMounted": "Allow Sprinting While Passenger"
+  "config.takeitslow.option.allowMounted": "Allow Sprinting While Passenger",
+  "key.takeitslow.toggle": "Toggle Take it Slow",
+  "gui.takeitslow.enabled": "Enabled Take it Slow",
+  "gui.takeitslow.disabled": "Disabled Take it Slow"
 }
